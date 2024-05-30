@@ -141,7 +141,7 @@ sudo systemctl restart docker
 ```bash
 --gpus all #指定容器可以访问所有GPU
 --runtime nvidia #指定容器使用NVIDIA的运行时环境
---env="NVIDIA_VISIBLE_DEVICES=all" #将所有可见的 GPU 设备传递给容
+--env="NVIDIA_VISIBLE_DEVICES=all" #将所有可见的 GPU 设备传递给容器
 --env="NVIDIA_DRIVER_CAPABILITIES=all"  #为容器启用所有可用的 NVIDIA 驱动程序功能
 ```
 
