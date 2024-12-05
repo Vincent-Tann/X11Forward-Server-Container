@@ -53,6 +53,8 @@ sudo apt install xauth x11-apps
 
 运行测试程序`xclock`， 如果在本地显示器上看到时钟，说明X11 Forward配置成功。
 
+（更新）系统自带的'xeyes'程序不需要安装，可视化效果是一双眼睛看向鼠标。
+
 ### .Xauthority文件
 
 `.Xauthority` 文件用于存储授权信息，确保只有被授权的客户端才能连接到 X 服务器。这些信息包括：
@@ -169,5 +171,9 @@ rviz::RenderSystem: error creating render window: OGRE EXCEPTION(3:RenderingAPIE
 
 可能和OpenGL版本或者显卡驱动版本有关。
 
+### 关于Mac如何连接服务器并进行可视化
+Mac本身不支持X11，但是可以下载XQuartz，打开其命令行xterm，像正常使用命令行一样用ssh -Y 连接服务器即可。
+
+似乎不要其他多余的操作。
 
 
